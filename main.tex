@@ -256,7 +256,7 @@
 \xpatchcmd{\mintinline}{\begingroup}{\begingroup\let\itshape\relax}{}{}
 \xpatchcmd{\minted}{\VerbatimEnvironment}{\VerbatimEnvironment\let\itshape\relax}{}{}
 
-\newcommand{\code}[2][c++]{\mintinline{#1}{#2}}
+\newcommand{\code}[2][text]{\mintinline{#1}{#2}}
 % \renewcommand{\inputminted}[2][c++]{\inputminted{#1}{listings/#2}}
 
 \newcommand{\authors}{Соснин В.В., Балакшин П.В., Шилко Д.С., Пушкарев Д.А., Мишенёв А.В., Кустарев П.В., Тропченко А.А.}
@@ -293,12 +293,6 @@
 	\include{section9_lab6}
     \include{conclusion}
     \addbibliography{Список используемой литературы}
-    
-    % \addcontentsline{toc}{section}{Список используемой литературы}
-    % \phantomsection
-    % \printbibliography[title={Список используемой литературы}]
-	% \include{bibliography}
- 
     \include{lastPage}
     \include{backPage}
     
