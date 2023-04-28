@@ -13,7 +13,6 @@ jobs:
         root_file: main.tex
         latexmk_shell_escape: true
     - name: Store PDF
-      uses: actions/upload-artifact@v3.1.0
+      uses: actions/upload-artifact@v3.1.2
       with:
-        name: main.pdf
         path: main.pdf
